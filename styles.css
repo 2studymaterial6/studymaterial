@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 50px;
+  scroll-behavior: smooth;
 }
 /* .wrapper{
   display: flex;
@@ -408,50 +409,181 @@
   grid-area: syl;
   border: 2px solid yellow;
   color: white;
+  position: relative;
+  z-index: 0;
 }
 #Syl:hover {
-  background-color: #fefe90; 
+  color: black;
+}
+#Syl::before {
+  content: "";
+  background-color: #fefe90;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#Syl:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 #Note {
   grid-area: note;
   border: 2px solid blue;
+  position: relative;
+  z-index: 0;
 }
-
 #Note:hover {
+  color: black;
+}
+#Note::before {
+  content: "";
   background-color: rgb(115, 173, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#Note:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 #Ass1 {
   grid-area: ass1;
   border: 2px solid red;
+  position: relative;
+  z-index: 0;
 }
 #Ass1:hover {
+  color: black;
+}
+#Ass1::before {
+  content: "";
   background-color: rgb(242, 108, 108);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#Ass1:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 #aca {
   grid-area: aca;
   border: 2px solid orange;
+  position: relative;
+  z-index: 0;
 }
 #aca:hover {
+  color: black;
+}
+#aca::before {
+  content: "";
   background-color: rgb(248, 206, 129);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#aca:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 #tt1 {
   grid-area: tt1;
   border: 2px solid violet;
+  position: relative;
+  z-index: 0;
 }
 #tt1:hover {
+  color: black;
+}
+#tt1::before {
+  content: "";
   background-color: rgb(255, 141, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#tt1:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 #mat1 {
   grid-area: mat1;
   border: 2px solid rgb(0, 255, 0);
+  position: relative;
+  z-index: 0;
 }
 #mat1:hover {
+  color: black;
+}
+#mat1::before {
+  content: "";
   background-color: rgb(155, 255, 155);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#mat1:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
   color: black;
 }
 
@@ -493,14 +625,15 @@
   grid-gap: 8%; */
   justify-content: center;
   align-items: center;
-/*   grid-template-areas: 
+  /* grid-template-areas: 
   "logo"
   "caption"; */
   }
   #logo{
-    margin-right:100%;
+    margin-left: 200%;
+    margin-right:50%;
     margin-bottom: 2%;
-    scale: 50%;
+    scale: 100%;
   }
   #caption{
     scale: 40%;
@@ -509,19 +642,10 @@
   #course{
     scale: 0;
   }
-  /* 
-  #bca{
-    margin-top: 50%;
-    margin-left: 50%;
+  
+  #bca,#bba,#mlt{
+    margin-bottom: 40%;
   }
-  #bba{
-    margin-top: 50%;
-    margin-left: 50%;
-  }
-  #mlt{
-    margin-top: 50%;
-    margin-left: 50%;
-  } */
 }  
 #footer{
   margin-top: 2%;
