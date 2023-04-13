@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 50px;
+  scroll-behavior: smooth;
 }
 .container {
   overflow-x: hidden;
@@ -288,73 +289,253 @@ grid-template-rows: repeat(3, 10%);
     border: 2px solid yellow;
     text-align: center;
     padding: auto;
+    position: relative;
+    z-index: 0;
 }
-#java:hover{
-    background-color: rgb(201, 201, 48);
+#java::before {
+  content: "";
+  background-color: rgb(201, 201, 48);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#java:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #daa{
     grid-area: daa;
     border: 2px solid blue;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#daa:hover{
-    background-color: rgb(49, 49, 199);
+#daa::before {
+  content: "";
+  background-color: rgb(49, 49, 199);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#daa:hover::before {  
+  transform: scaleY(1);
+  transform: scalex(1);
+
 }
 #cloud{
     grid-area: cloud;
     border: 2px solid red;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#cloud:hover{
-    background-color: rgb(204, 48, 48);
+#cloud::before {
+  content: "";
+  background-color: rgb(204, 48, 48);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#cloud:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #cscl{
     grid-area: cscl;
     border: 2px solid orange;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#cscl:hover{
-    background-color: rgb(210, 152, 43);;
+#cscl::before {
+  content: "";
+  background-color: rgb(210, 152, 43);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#cscl:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #ds{
     grid-area: ds;
     border: 2px solid violet;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#ds:hover{
-    background-color: rgb(195, 53, 195);
+#ds::before {
+  content: "";
+  background-color: rgb(195, 53, 195);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#ds:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #sem{
     grid-area: sem;
     border: 2px solid rgb(0, 255, 0);
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#sem:hover{
-    background-color: rgb(50, 195, 50);
+#sem::before {
+  content: "";
+  background-color: rgb(50, 195, 50);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#sem:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #ftwsel{
     grid-area: ftwsel;
     border: 2px solid green;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#ftwsel:hover{
-    background-color: rgb(49, 121, 49);
+#ftwsel::before {
+  content: "";
+  background-color: rgb(49, 121, 49);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#ftwsel:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #ftwent{
     grid-area: ftwent;
     border: 2px solid yellowgreen;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#ftwent:hover{
-    background-color: rgb(133, 170, 60);
+#ftwent::before {
+  content: "";
+  background-color: rgb(133, 170, 60);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#ftwent:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 #mooc{
     grid-area: mooc;
     border: 2px solid brown;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-#mooc:hover{
-    background-color: rgb(153, 73, 73);
+#mooc::before {
+  content: "";
+  background-color: rgb(153, 73, 73);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scalex(0);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all .7s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+#mooc:hover::before {
+  transform: scalex(1);
+  transform: scaleY(1);
+
 }
 /* #Syl {
   grid-area: syl;
@@ -452,6 +633,16 @@ grid-template-rows: repeat(3, 10%);
   "logo logo logo"
   "mat tt ass";
   grid-gap: 2%;
+  }
+  #bca,#bba,#mlt{
+    margin-bottom: 40%;
+  }
+  #tt,#ass{
+    padding-left: 3%;
+  }
+  #logo{
+    margin-left: 22%;
+    margin-bottom: 5%;
   }
 }  
 #footer{
