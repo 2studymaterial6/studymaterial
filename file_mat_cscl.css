@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 50px;
+    scroll-behavior: smooth;
   }
   .container {
     overflow-x: hidden;
@@ -483,6 +484,16 @@
     }
     .files{
       grid-template-columns: repeat(1,1fr);
+    }
+    #bca,#bba,#mlt{
+      margin-bottom: 40%;
+    }
+    #tt,#ass{
+      padding-left: 3%;
+    }
+    #logo{
+      margin-left: 22%;
+      margin-bottom: 5%;
     }
   }  
   #footer{
