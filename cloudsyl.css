@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 50px;
+  scroll-behavior: smooth;
 }
 .container {
   overflow-x: hidden;
@@ -471,6 +472,16 @@ color: black;
   "logo logo logo"
   "mat tt ass";
   grid-gap: 2%;
+  }
+  #bca,#bba,#mlt{
+    margin-bottom: 40%;
+  }
+  #tt,#ass{
+    padding-left: 3%;
+  }
+  #logo{
+    margin-left: 22%;
+    margin-bottom: 5%;
   }
 }  
 #footer{
